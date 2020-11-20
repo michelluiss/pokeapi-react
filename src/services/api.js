@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://empresas.ioasys.com.br/api/v1/',
+  baseURL: 'https://pokeapi.co/api/v2/',
   headers: { 'Content-Type': 'application/json' }
 })
 

@@ -1,0 +1,38 @@
+.home-page {
+  .logo {
+  }
+  .content-page-home {
+    margin-top: gr(60);
+  }
+  .infinite-scroll-component {
+    display: flex;
+    flex-wrap: wrap;
+    .card {
+      &:hover {
+        .box-icon svg {
+          transform: rotate(360deg);
+          width: 40px;
+          height: 40px;
+        }
+      }
+      .card-title {
+        text-transform: uppercase;
+        font-weight: 900;
+      }
+      .box-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: gr(45);
+        height: gr(45);
+        margin: 0 auto;
+        svg {
+          transition: linear all 0.3s;
+        }
+      }
+      .btn {
+        font-weight: 100;
+      }
+    }
+  }
+}
