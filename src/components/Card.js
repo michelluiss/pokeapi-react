@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import { CgPokemon } from 'react-icons/cg';
 
 const Card = ({ pokemon }) => (
@@ -9,7 +10,10 @@ const Card = ({ pokemon }) => (
           <CgPokemon size="30"/>
         </div>
         <h5 className="card-title color-success">{ pokemon.name }</h5>
-        <a href="#" className="btn btn-dark">Read more</a>
+        <Link to={{
+            pathname: '/pokemon',
+            url: pokemon.url
+          }} className="btn btn-dark">Read more</Link>
       </div>
     </div>
   </div>
