@@ -1,0 +1,103 @@
+#root,
+.App {
+  text-align: center;
+  height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+  
+html,body {
+  font-size: $font-base + px;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  // min-height: 100vh;
+  margin: 0;
+  background: #eeecdb;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  @media (max-width: 991.98px) {
+    font-size: 15px;
+  }
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+  @media (max-width: 575.98px) {
+    font-size: 14.5px;
+  }
+  @media (max-width: 375px) {
+    font-size: 14px;
+  }
+  @media (max-width: 320px) {
+    font-size: 13px;
+  }
+  h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  p {
+    margin: 0;
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.container {
+  max-width: gr(1024);
+  margin: 0 auto;
+  padding: gr(0) gr(15);
+}
+
+.input-icon {
+  position: relative;
+  .form-control {
+    border: 0;
+    border-bottom: 1px solid #383743;
+    border-radius: 0;
+    background: none;
+    text-indent: 10px;
+    color: #403e4d;
+    font-size: gr(20);
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .input-group-prepend {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    svg {
+      color: #ee4c77;
+    }
+  }
+  .input-group-append {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    right: 0;
+    align-items: center;
+    cursor: pointer;
+  }
+}
