@@ -18,7 +18,6 @@ export default class Home extends Component {
   async componentDidMount() {
     try {
       const response = await api.get('pokemon?limit=80&offset=0')
-      console.log(response)
       this.setState({
         pokemon: response.data.results,
         meta: {
